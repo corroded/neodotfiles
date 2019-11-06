@@ -3,8 +3,10 @@
 
 home=~/Documents/Projects/neodotfiles
 
+# META
 alias ae='nvim $home/zsh/aliases.zsh' #alias edit
 alias ar='source $home/zsh/aliases.zsh'  #alias reload
+alias av='nvim $home/vim/init.vim' #edit vimrc
 
 # GIT
 alias gs='git status'
