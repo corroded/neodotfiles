@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+DOTHOME="/Users/eumir/Documents/Projects/neodotfiles"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/eumir/.oh-my-zsh"
 
@@ -21,7 +23,7 @@ ZSH_THEME="pygmalion"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -36,7 +38,7 @@ ZSH_THEME="pygmalion"
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -126,4 +128,6 @@ export NVM_DIR="$HOME/.nvm"
 #
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/Documents/Projects/neodotfiles/zsh/aliases.zsh
+source "${DOTHOME}/zsh/aliases.zsh"
+
+eval "$(direnv hook zsh)"

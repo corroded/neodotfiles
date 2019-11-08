@@ -3,10 +3,14 @@
 
 home=~/Documents/Projects/neodotfiles
 
-# META
-alias ae='nvim $home/zsh/aliases.zsh' #alias edit
+# ZSH
+alias ae='nvim $home/zsh/aliases.zsh' 	 #alias edit
 alias ar='source $home/zsh/aliases.zsh'  #alias reload
-alias av='nvim $home/vim/init.vim' #edit vimrc
+alias az='nvim $home/zsh/.zshrc' 	 #edit zshrc
+alias azr='source ~/.zshrc'		 #reload zshrc
+
+# VIM
+alias av='nvim $home/vim/init.vim' 	 #edit vimrc
 
 # GIT
 alias gs='git status'
@@ -19,5 +23,5 @@ alias gl='git l'
 alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
-# Ruby
+# RUBY
 alias be='bundle exec'
