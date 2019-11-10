@@ -1,0 +1,3 @@
+:verbose: really
+install: --nowrappers --no-document
+update: --no-document

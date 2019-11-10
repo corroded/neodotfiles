@@ -57,3 +57,5 @@ command! -bang -nargs=* Rg
 set number
 
 colorscheme NeoSolarized
+
+set clipboard+=unnamedplus

@@ -10,7 +10,11 @@ alias az='nvim $home/zsh/.zshrc' 	 #edit zshrc
 alias azr='source ~/.zshrc'		 #reload zshrc
 
 # VIM
+alias vi='nvim'
+
+# EDIT various dotfiles
 alias av='nvim $home/vim/init.vim' 	 #edit vimrc
+alias ad='nvim .envrc'			 #edit local envrc file for project
 
 # GIT
 alias gs='git status'
