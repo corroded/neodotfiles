@@ -1,6 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
+Plug 'tpope/vim-sensible'
+Plug 'rstacruz/vim-opinion'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -8,6 +10,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'iCyMind/NeoSolarized'
 Plug 'tpope/vim-fugitive'
 Plug 'skwp/vim-spec-finder'
+Plug 'tpope/vim-surround'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -37,6 +42,9 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-l> <C-w>l
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
+
+# From YADR: (clears search highlighting)
+nmap <silent> // :nohlsearch<CR>
 
 " From https://github.com/junegunn/fzf.vim
 "   * fzf#vim#with_preview([[options], [preview window], [toggle keys...]])
