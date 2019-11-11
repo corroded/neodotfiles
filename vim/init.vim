@@ -43,7 +43,7 @@ nnoremap <silent> <C-l> <C-w>l
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
 
-# From YADR: (clears search highlighting)
+" From YADR: (clears search highlighting)
 nmap <silent> // :nohlsearch<CR>
 
 " From https://github.com/junegunn/fzf.vim
