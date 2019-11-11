@@ -4,6 +4,7 @@
 home=~/Documents/Projects/neodotfiles
 
 # ZSH
+alias ac='cat $home/zsh/aliases.zsh'     #alias check
 alias ae='nvim $home/zsh/aliases.zsh' 	 #alias edit
 alias ar='source $home/zsh/aliases.zsh'  #alias reload
 alias az='nvim $home/zsh/.zshrc' 	 #edit zshrc

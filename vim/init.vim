@@ -6,6 +6,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'iCyMind/NeoSolarized'
+Plug 'tpope/vim-fugitive'
+Plug 'skwp/vim-spec-finder'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
