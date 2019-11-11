@@ -3,6 +3,8 @@
 
 DOTHOME="/Users/eumir/Documents/Projects/neodotfiles"
 
+export BUNDLER_EDITOR='nvim'
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/eumir/.oh-my-zsh"
 
