@@ -17,6 +17,9 @@ alias vi='nvim'
 alias av='nvim $home/vim/init.vim' 	 #edit vimrc
 alias ad='nvim .envrc'			 #edit local envrc file for project
 
+# MISC
+alias ls='ls -G' # colorized ls OSX
+
 # GIT
 alias gs='git status'
 alias gst='git stash'
@@ -27,6 +30,10 @@ alias gbi='git rebase --interactive'
 alias gl='git l'
 alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias gpo='git pull origin'
 
 # RUBY
 alias be='bundle exec'
+
+# FASD
+alias v='f -e nvim'
