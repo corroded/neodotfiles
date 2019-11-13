@@ -13,6 +13,7 @@ Plug 'skwp/vim-spec-finder'
 Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
 Plug 'easymotion/vim-easymotion'
+Plug 'keith/rspec.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -89,6 +90,16 @@ map ,jc :CtrlP app/controllers<CR>
 map ,jv :CtrlP app/views<CR>
 map ,jl :CtrlP lib<CR>
 map ,js :CtrlP spec<CR>
+
+" From YADR again
+" These keys are easier to type than the default set
+" We exclude semicolon because it's hard to read and
+" i and l are too easy to mistake for each other slowing
+" down recognition. The home keys and the immediate keys
+" accessible by middle fingers are available 
+let g:EasyMotion_keys='asdfjkoweriop'
+nmap ,<ESC> ,,w
+nmap ,<S-ESC> ,,b
 
 set number
 
