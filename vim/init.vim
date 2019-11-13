@@ -1,19 +1,23 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
+Plug '/usr/local/opt/fzf'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'iCyMind/NeoSolarized'
+Plug 'junegunn/fzf.vim'
+Plug 'keith/rspec.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'skwp/vim-spec-finder'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'vim-ruby/vim-ruby'
+
 Plug 'tpope/vim-sensible'
 Plug 'rstacruz/vim-opinion'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'iCyMind/NeoSolarized'
-Plug 'tpope/vim-fugitive'
-Plug 'skwp/vim-spec-finder'
-Plug 'tpope/vim-surround'
-Plug 'sheerun/vim-polyglot'
-Plug 'easymotion/vim-easymotion'
-Plug 'keith/rspec.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
