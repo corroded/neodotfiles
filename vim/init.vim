@@ -11,11 +11,20 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'tpope/vim-fugitive'
 Plug 'skwp/vim-spec-finder'
 Plug 'tpope/vim-surround'
+Plug 'sheerun/vim-polyglot'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+" From YADR - but looks like a common thing. Also, muscle memory
+let mapleader=","
+
+" Display tabs and trailing spaces visually
+" also from YADR
+set list listchars=tab:\ \ ,trail:·
 
 " mostly from https://github.com/skwp/dotfiles/blob/50767f29218ffcd19521d543c5a06820fb78101d/vim/settings/yadr-keymap.vim
 " ==== NERD tree
