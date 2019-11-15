@@ -37,4 +37,5 @@ ehthumbs.db
 Thumbs.db
 
 .envrc
-*.rdb # from foreman?
+# from foreman?
+dump.rdb
