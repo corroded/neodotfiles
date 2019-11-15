@@ -34,6 +34,8 @@ alias gpo='git pull origin'
 
 # RUBY
 alias be='bundle exec'
+alias sr='spring rspec'
+alias rs='bundle exec rspec'
 
 # FASD
 alias v='f -e nvim'
