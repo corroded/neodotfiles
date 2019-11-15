@@ -21,13 +21,14 @@ alias ad='nvim .envrc'			 #edit local envrc file for project
 alias ls='ls -G' # colorized ls OSX
 
 # GIT
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>' --abbrev-commit"
+alias glog='gl'
 alias gs='git status'
 alias gst='git stash'
 alias gsp='git status --pretty'
 alias gcm='git commit -m'
 alias gap='git add -p'
 alias gbi='git rebase --interactive'
-alias gl='git l'
 alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias gpo='git pull origin'
