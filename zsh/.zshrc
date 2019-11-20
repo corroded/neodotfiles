@@ -1,8 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-DOTHOME="/Users/eumir/Documents/Projects/neodotfiles"
-
+DOTHOME="/Users/eumir/Documents/Projects/neodotfiles" 
 export BUNDLER_EDITOR='nvim'
 
 # Path to your oh-my-zsh installation.
@@ -80,6 +79,8 @@ plugins=(
   fasd
   git
   osx
+  nvm
+  zsh-syntax-highlighting
 )
 
 function iterm2_print_user_vars() {
@@ -106,6 +107,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/gettext/lib"
+export CPPFLAGS="-I/usr/local/opt/gettext/include"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -123,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(rbenv init -)"
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 
-for some reason this slows down everything
+# for some reason this slows down everything
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -133,3 +137,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source "${DOTHOME}/zsh/aliases.zsh"
 
 eval "$(direnv hook zsh)"
+
+. /usr/local/opt/asdf/asdf.sh
+
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash

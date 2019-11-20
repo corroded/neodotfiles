@@ -2,3 +2,6 @@
 	excludesfile = /Users/eumir/.gitignore_global
 [pager]
 	branch = false
+[user]
+	name = Eumir Gaspar
+	email = eumirgaspar@gmail.com

@@ -87,6 +87,9 @@ command! -bang -nargs=* Rg
 
 " From YADR - CtrlP settings
 let g:ctrlp_map = ',t'
+" FZF is fast enough - also so there's no need to clear cache when switching
+" branches
+let g:ctrlp_use_caching = 0
 nnoremap <silent> ,t :CtrlP<CR>
 
 " Additional mapping for buffer search

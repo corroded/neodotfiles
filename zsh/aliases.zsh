@@ -25,7 +25,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s
 alias glog='gl'
 alias gs='git status'
 alias gst='git stash'
-alias gsp='git status --pretty'
+alias gsp='git show --pretty'
 alias gcm='git commit -m'
 alias gap='git add -p'
 alias gbi='git rebase --interactive'
@@ -40,3 +40,7 @@ alias rs='bundle exec rspec'
 
 # FASD
 alias v='f -e nvim'
+
+# SPLIT
+alias startdev='foreman start -f Procfile.development'
+
