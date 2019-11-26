@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug '/usr/local/opt/fzf'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'iCyMind/NeoSolarized'
 Plug 'junegunn/fzf.vim'
@@ -116,6 +117,29 @@ map ,js :CtrlP spec<CR>
 let g:EasyMotion_keys='asdfjkoweriop'
 nmap ,<ESC> ,,w
 nmap ,<S-ESC> ,,b
+
+" More YADR stuff
+" ============================
+" SplitJoin plugin
+" ============================
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
+
+" via: http://rails-bestpractices.com/posts/60-remove-trailing-whitespace
+" Strip trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
+nmap ,w :StripTrailingWhitespaces<CR>
 
 set number
 
