@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/eumir/.gitignore_global
+	editor = /usr/local/bin/nvim
 [pager]
 	branch = false
 [user]
