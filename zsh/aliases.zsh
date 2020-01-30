@@ -32,11 +32,17 @@ alias gbi='git rebase --interactive'
 alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias gpo='git pull origin'
+alias gplr='git pull --rebase'
 
 # RUBY
 alias be='bundle exec'
 alias sr='spring rspec'
 alias rs='bundle exec rspec'
+alias rsa='rspec spec'
+
+# RAILS
+alias ber='bin/rake routes | fzf'
+alias rtp="RACK_ENV=test rake 'parallel:spec[8]'"
 
 # FASD
 alias v='f -e nvim'

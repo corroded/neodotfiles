@@ -6,3 +6,5 @@
 [user]
 	name = Eumir Gaspar
 	email = eumirgaspar@gmail.com
+[merge]
+	tool = nvim
