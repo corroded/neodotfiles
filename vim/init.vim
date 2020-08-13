@@ -19,6 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
+Plug 'vim-syntastic/syntastic'
 
 Plug 'tpope/vim-sensible'
 Plug 'rstacruz/vim-opinion'
@@ -147,3 +148,18 @@ set number
 colorscheme NeoSolarized
 
 set clipboard+=unnamedplus
+
+" Syntastic [recommended] settings from README
+" https://github.com/vim-syntastic/syntastic#3-recommended-settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" Additional Syntastic customisations
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
