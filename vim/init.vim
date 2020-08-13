@@ -62,6 +62,12 @@ nnoremap <silent> <C-l> <C-w>l
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
 
+" From Ritchie
+nnoremap ,r :!bin/rspec %<cr>
+
+" To summon :Git which shows changed files
+nnoremap ,g :Git<cr>
+
 " From YADR
 " copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
 " this is helpful to paste someone the path you're looking at
