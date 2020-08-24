@@ -50,3 +50,10 @@ alias v='f -e nvim'
 # SPLIT
 alias startdev='foreman start -f Procfile.development'
 
+# RANDOM
+# from @alexlouden in Fenders
+alias gjgif='curl -s "https://api.giphy.com/v1/gifs/random?api_key=02872bkKibCp89d5A1oILo0uh3uzNb5d&tag=good%work&rating=g" | jq -r ".data.images.downsized_medium.url" | tee >(pbcopy) | xargs open'
+alias getgif='pbpaste | xargs wget'
+
+gifsearch() { curl -s "https://api.giphy.com/v1/gifs/search?api_key=02872bkKibCp89d5A1oILo0uh3uzNb5d&rating=g&limit=1&q=$1" | jq -r --unbuffered ".data[0].images.downsized_medium.url" | tee >(pbcopy) | xargs open }
+alias gsearch='gifsearch'
