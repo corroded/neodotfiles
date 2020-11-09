@@ -1,6 +1,7 @@
 [core]
 	excludesfile = /Users/eumir/.gitignore_global
 	editor = /usr/local/bin/nvim
+	attributesfile = /Users/eumir/.gitattributes
 [pager]
 	branch = false
 [user]
@@ -8,3 +9,5 @@
 	email = eumirgaspar@gmail.com
 [merge]
 	tool = nvim
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
