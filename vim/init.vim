@@ -21,6 +21,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
+Plug 'neomake/neomake'
 
 Plug 'tpope/vim-sensible'
 Plug 'rstacruz/vim-opinion'
@@ -169,4 +170,7 @@ let g:syntastic_check_on_wq = 0
 
 " Additional Syntastic customisations
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_checkers = ['mri']
+
+" Run linting automatically.
+autocmd VimEnter * call neomake#configure#automake('nrwi', 500)
