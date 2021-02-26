@@ -2,6 +2,7 @@
 	excludesfile = /Users/eumir/.gitignore_global
 	editor = /usr/local/bin/nvim
 	attributesfile = /Users/eumir/.gitattributes
+  pager = delta
 [pager]
 	branch = false
 [user]
@@ -11,3 +12,10 @@
 	tool = nvim
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
+[delta]
+  side-by-side = true
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
+[interactive]
+  diffFilter = delta --color-only
