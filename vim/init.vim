@@ -90,10 +90,12 @@ nmap <silent> // :nohlsearch<CR>
 "
 "   :Rg  - Start fzf with hidden preview window that can be enabled with "?" key
 "   :Rg! - Start fzf in fullscreen and display the preview window above
-" Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
+" Set fzf results in the bottom part of screen
+let g:fzf_layout = { 'down': '40%' }
+
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
