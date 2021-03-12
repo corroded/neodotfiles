@@ -33,6 +33,7 @@ alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias gpo='git pull origin'
 alias gplr='git pull --rebase'
+gip() { git archive --format=zip -o $1.zip HEAD }
 
 # RUBY
 alias be='bundle exec'
