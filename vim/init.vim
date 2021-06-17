@@ -175,7 +175,7 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_ruby_checkers = ['mri']
 
 " Run linting automatically.
-autocmd VimEnter * call neomake#configure#automake('nrwi', 500)
+autocmd VimEnter * call neomake#configure#automake('w')
 
 let g:neomake_open_list = 5
 let g:neomake_ruby_enabled_makers = ['rubocop']
