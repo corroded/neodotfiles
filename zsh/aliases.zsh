@@ -33,6 +33,7 @@ alias gdc='git diff --cached -w'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias gpo='git pull origin'
 alias gplr='git pull --rebase'
+alias gorm='git pull origin main'
 gip() { git archive --format=zip -o $1.zip HEAD }
 
 # RUBY
@@ -44,6 +45,7 @@ alias rsa='rspec spec'
 # RAILS
 alias ber='bin/rake routes | fzf'
 alias rtp="RACK_ENV=test rake 'parallel:spec[8]'"
+alias rmlog='rm log/*.log'
 
 # FASD
 alias v='f -e nvim'
@@ -54,7 +56,9 @@ alias startdev='foreman start -f Procfile.development'
 # RANDOM
 # from @alexlouden in Fenders
 alias gjgif='curl -s "https://api.giphy.com/v1/gifs/random?api_key=02872bkKibCp89d5A1oILo0uh3uzNb5d&tag=good%work&rating=g" | jq -r ".data.images.downsized_medium.url" | tee >(pbcopy) | xargs open'
-alias getgif='pbpaste | xargs wget'
+alias getgif='pbpaste | xargs wget -O giphy.gif'
 
 gifsearch() { curl -s "https://api.giphy.com/v1/gifs/random?api_key=02872bkKibCp89d5A1oILo0uh3uzNb5d&tag=$1&rating=g" | jq -r --unbuffered ".data.images.downsized_medium.url" | tee >(pbcopy) | xargs open }
 alias gsearch='gifsearch'
+
+alias yeet='git push origin $(git rev-parse --abbrev-ref HEAD)'
