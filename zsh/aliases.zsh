@@ -62,3 +62,4 @@ gifsearch() { curl -s "https://api.giphy.com/v1/gifs/random?api_key=02872bkKibCp
 alias gsearch='gifsearch'
 
 alias yeet='git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias yolo='git push origin -f $(git rev-parse --abbrev-ref HEAD)'
