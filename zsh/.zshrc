@@ -124,7 +124,7 @@ export CPPFLAGS="-I/usr/local/opt/gettext/include"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 export PATH="/usr/local/opt/postgresql@12/bin:./bin:$PATH"
 
 # for some reason this slows down everything
