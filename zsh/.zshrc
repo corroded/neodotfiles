@@ -78,7 +78,7 @@ fi
 plugins=(
   fasd
   git
-  osx
+  macos
   nvm
   zsh-syntax-highlighting
 )
