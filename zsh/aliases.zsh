@@ -53,6 +53,7 @@ alias v='f -e nvim'
 
 # SPLIT
 alias startdev='foreman start -f Procfile.development'
+alias pgstart='pg_ctl -D tmp/postgres -l tmp/postgres/logfile start || echo "pg was probably running"'
 
 # RANDOM
 # from @alexlouden in Fenders
@@ -63,4 +64,4 @@ gifsearch() { curl -s "https://api.giphy.com/v1/gifs/random?api_key=02872bkKibCp
 alias gsearch='gifsearch'
 
 alias yeet='git push origin $(git rev-parse --abbrev-ref HEAD)'
-alias yolo='git push origin -f $(git rev-parse --abbrev-ref HEAD)'
+alias yolo='git push origin --force-with-lease $(git rev-parse --abbrev-ref HEAD)'
