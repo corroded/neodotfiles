@@ -54,6 +54,7 @@ alias v='f -e nvim'
 # SPLIT
 alias startdev='foreman start -f Procfile.development'
 alias pgstart='pg_ctl -D tmp/postgres -l tmp/postgres/logfile start || echo "pg was probably running"'
+alias pgstop='pg_ctl -D tmp/postgres -l tmp/postgres/logfile stop || echo "pg was probably stopped"'
 
 # RANDOM
 # from @alexlouden in Fenders
