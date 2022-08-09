@@ -1,7 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-DOTHOME="/Users/eumir/Documents/Projects/neodotfiles" 
 export BUNDLER_EDITOR='nvim'
 
 # Path to your oh-my-zsh installation.
@@ -116,7 +115,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source "${DOTHOME}/zsh/aliases.zsh"
+source "${HOME}/zsh/aliases.zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
