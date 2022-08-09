@@ -1,15 +1,15 @@
 [core]
-	excludesfile = /Users/eumir/.gitignore_global
-	editor = /usr/local/bin/nvim
-	attributesfile = /Users/eumir/.gitattributes
+  excludesfile = /Users/eumir/.gitignore_global
+  editor = /usr/local/bin/nvim
+  attributesfile = /Users/eumir/.gitattributes
   pager = delta
 [pager]
-	branch = false
+  branch = false
 [user]
-	name = Eumir Gaspar
-	email = eumirgaspar@gmail.com
+  name = Eumir Gaspar
+  email = eumirgaspar@gmail.com
 [merge]
-	tool = nvim
+  tool = nvim
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
 [delta]
@@ -20,4 +20,4 @@
 [interactive]
   diffFilter = delta --color-only
 [credential]
-	username = corroded
+  username = corroded
