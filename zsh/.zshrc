@@ -107,9 +107,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/gettext/lib"
-export CPPFLAGS="-I/usr/local/opt/gettext/include"
+
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
