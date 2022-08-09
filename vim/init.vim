@@ -158,7 +158,7 @@ nmap ,w :StripTrailingWhitespaces<CR>
 
 set number
 
-colorscheme NeoSolarized
+" colorscheme NeoSolarized
 
 set clipboard+=unnamedplus
 
