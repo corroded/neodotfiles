@@ -4,12 +4,13 @@
 home=$HOME/Projects/neodotfiles
 
 # ZSH
-alias ac='cat $home/zsh/aliases.zsh'        #alias check
-alias ae='nvim $home/zsh/aliases.zsh' 	    #alias edit
-alias ar='source $home/zsh/aliases.zsh'     #alias reload
-alias az='nvim $home/zsh/.zshrc' 	          #edit zshrc
-alias azr='source ~/.zshrc'		              #reload zshrc
-alias ast='nvim ~/.config/starship.toml'    #edit starship
+alias ak='nvim $HOME/.config/kitty/kitty.conf'  #edit kitty.conf
+alias ac='cat $home/zsh/aliases.zsh'            #alias check
+alias ae='nvim $home/zsh/aliases.zsh'           #alias edit
+alias ar='source $home/zsh/aliases.zsh'         #alias reload
+alias az='nvim $HOME/.zshrc'    	              #edit zshrc
+alias azr='source $HOME/.zshrc'		              #reload zshrc
+alias ast='nvim $HOME/.config/starship.toml'    #edit starship
 
 # VIM
 alias vi='nvim'
