@@ -5,6 +5,7 @@ export BUNDLER_EDITOR='nvim'
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export DOTHOME="$HOME/Projects/neodotfiles"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,7 +116,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source "${HOME}/zsh/aliases.zsh"
+source "${DOTHOME}/zsh/aliases.zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
