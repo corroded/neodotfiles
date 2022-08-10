@@ -39,3 +39,6 @@ Thumbs.db
 .envrc
 # from foreman?
 dump.rdb
+
+.irb_history
+Brewfile.lock.json
