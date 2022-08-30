@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
-Plug '/usr/local/opt/fzf'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ck3g/vim-change-hash-syntax'
 Plug 'ctrlpvim/ctrlp.vim'
