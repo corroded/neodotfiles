@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# /usr/local/ for linux
+# /opt/homebrew/ for OSX M1
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
@@ -118,6 +120,8 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 source "${DOTHOME}/zsh/aliases.zsh"
 
+# /usr/local/ for linux
+# /opt/homebrew/ for OSX M1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(fasd --init auto)"
