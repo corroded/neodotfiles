@@ -1,9 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
+" This should be where fzf is /opt/homebrew/ is for M1
+Plug '/opt/homebrew/bin/fzf'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ck3g/vim-change-hash-syntax'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'iCyMind/NeoSolarized'
@@ -102,25 +103,22 @@ command! -bang -nargs=* Rg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
-" From YADR - CtrlP settings
-let g:ctrlp_map = ',t'
-" FZF is fast enough - also so there's no need to clear cache when switching
-" branches
-let g:ctrlp_use_caching = 0
-nnoremap <silent> ,t :CtrlP<CR>
+" Use FZF for ,t instead of ctrl p
+nnoremap <silent> ,t :FZF<CR>
 
 " Additional mapping for buffer search
-nnoremap <silent> ,b :CtrlPBuffer<cr>
+nnoremap <silent> ,b :Buffers<cr>
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
-" Open CtrlP starting from a particular path, making it much
+" Open ~~CtrlP~~ FZF starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
-map ,ja :CtrlP app/assets<CR>
-map ,jm :CtrlP app/models<CR>
-map ,jc :CtrlP app/controllers<CR>
-map ,jv :CtrlP app/views<CR>
-map ,jl :CtrlP lib<CR>
-map ,js :CtrlP spec<CR>
+map ,ja :FZF app/assets<CR>
+map ,jm :FZF app/models<CR>
+map ,jc :FZF app/controllers<CR>
+map ,jv :FZF app/views<CR>
+map ,jl :FZF lib<CR>
+map ,jf :FZF spec/factories<CR>
+map ,js :FZF spec<CR>
 
 " From YADR again
 " These keys are easier to type than the default set
