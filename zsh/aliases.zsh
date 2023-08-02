@@ -14,6 +14,7 @@ alias ast='nvim $HOME/.config/starship.toml'    #edit starship
 
 # VIM
 alias vi='nvim'
+alias shabu='nvim'
 
 # EDIT various dotfiles
 alias av='nvim $home/vim/init.vim' 	 #edit vimrc
@@ -53,7 +54,7 @@ alias rmlog='rm log/*.log'
 alias v='f -e nvim'
 
 # SPLIT
-alias startdev='foreman start -f Procfile.development'
+alias startdev='foreman start -f Procfile.dev'
 alias pgstart='pg_ctl -D tmp/postgres -l tmp/postgres/logfile start || echo "pg was probably running"'
 alias pgstop='pg_ctl -D tmp/postgres -l tmp/postgres/logfile stop || echo "pg was probably stopped"'
 
@@ -67,3 +68,5 @@ alias gsearch='gifsearch'
 
 alias yeet='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias yolo='git push origin --force-with-lease $(git rev-parse --abbrev-ref HEAD)'
+
+alias updatemain='git pull origin main && bundle'
