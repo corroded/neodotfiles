@@ -80,7 +80,6 @@ fi
 plugins=(
   git
   asdf
-  fasd
   macos
 )
 
@@ -123,8 +122,10 @@ source "${DOTHOME}/zsh/aliases.zsh"
 # /opt/homebrew/ for OSX M1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
-eval "$(fasd --init auto)"
+eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

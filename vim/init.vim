@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 " This should be where fzf is /opt/homebrew/ is for M1
 Plug '/opt/homebrew/bin/fzf'
+Plug 'nanotee/zoxide.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ck3g/vim-change-hash-syntax'
 Plug 'easymotion/vim-easymotion'
