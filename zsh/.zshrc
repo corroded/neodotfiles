@@ -129,3 +129,5 @@ eval "$(zoxide init zsh)"
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
