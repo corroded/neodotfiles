@@ -50,13 +50,8 @@ alias ber='bin/rake routes | fzf'
 alias rtp="RACK_ENV=test rake 'parallel:spec[8]'"
 alias rmlog='rm log/*.log'
 
-# FASD
-alias v='f -e nvim'
-
-# SPLIT
+# proc with foreman
 alias startdev='foreman start -f Procfile.dev'
-alias pgstart='pg_ctl -D tmp/postgres -l tmp/postgres/logfile start || echo "pg was probably running"'
-alias pgstop='pg_ctl -D tmp/postgres -l tmp/postgres/logfile stop || echo "pg was probably stopped"'
 
 # RANDOM
 # from @alexlouden in Fenders
