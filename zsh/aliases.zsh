@@ -65,3 +65,6 @@ alias yeet='git push origin $(git rev-parse --abbrev-ref HEAD)'
 alias yolo='git push origin --force-with-lease $(git rev-parse --abbrev-ref HEAD)'
 
 alias updatemain='git pull origin main && bundle'
+
+# ELIXIR
+alias mdgmc='mix deps.get && mix compile'
