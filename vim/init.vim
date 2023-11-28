@@ -23,7 +23,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-syntastic/syntastic'
-Plug 'neomake/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -174,14 +173,6 @@ let g:syntastic_check_on_wq = 0
 " Additional Syntastic customisations
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_ruby_checkers = ['mri']
-
-" Run linting automatically.
-autocmd VimEnter * call neomake#configure#automake('w')
-
-" let g:neomake_ruby_rubocop_exe = "bin/rubocop"
-"
-let g:neomake_open_list = 5
-let g:neomake_ruby_enabled_makers = ['rubocop']
 
 " Airline config
 set statusline+=%#warningmsg#
